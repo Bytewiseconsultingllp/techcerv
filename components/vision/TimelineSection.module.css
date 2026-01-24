@@ -1,0 +1,202 @@
+.timelineWrapper {
+    padding-top: 53px;
+}
+
+.timelineWrapper h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #7e6d75;
+}
+
+.sub {
+    text-align: center;
+    color: #3e4b67;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.timelineContainer {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Timeline horizontal line spanning full width, behind cards */
+.timelineLine {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #1a3d8f;
+    z-index: 1;
+}
+
+.timeline {
+    display: flex;
+    gap: 24px;
+    padding: 110px 24px 40px;
+    padding-left: calc(50% - 160px);
+    padding-right: calc(50% - 160px);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 320px;
+    background: white;
+    border: 1px solid #1a3d8f;
+    border-radius: 8px;
+    padding: 40px 25px 25px;
+    box-shadow: 0 2px 12px rgba(225, 143, 69, 0.3);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.card:hover h3 {
+    color: white;
+}
+
+.card:first-child {
+    background: linear-gradient(135deg, #1a3d8f, #1a3d8f);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 25px #1a3d8f;
+}
+
+.card:not(:first-child):hover {
+    background: linear-gradient(135deg, #1a3d8f, #1a3d8f);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 25px #1a3d8f;
+    transform: translateY(-7px);
+}
+
+.card:first-child h3 {
+    color: white;
+}
+
+/* Year pill styles */
+.yearPill {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a3d8f;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #1a3d8f;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    white-space: nowrap;
+    z-index: 20;
+}
+
+/* Blue dot above the year pill */
+.yearPill::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: #1a3d8f;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #1a3d8f;
+}
+
+/* Special style for first card year pill */
+.card:first-child .yearPill {
+    background: white;
+    color: #1a3d8f;
+    box-shadow: 0 0 12px #1a3d8f;
+}
+
+.card:first-child .yearPill::before {
+    background: #1a3d8f;
+    box-shadow: 0 0 10px #1a3d8f;
+}
+
+/* Headings and text */
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 16px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h3 i {
+    color: #1a3d8f;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.45;
+    color: inherit;
+    margin-bottom: 22px;
+}
+
+/* Learn More button */
+.learnBtn {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 24px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:first-child .learnBtn {
+    background: white;
+    color: #1a3d8f;
+}
+
+.card:not(:first-child) .learnBtn {
+    background: linear-gradient(135deg, #1a3d8f, #1a3d8f);
+    color: white;
+}
+
+.card:not(:first-child):hover .learnBtn {
+    background: white;
+    color: #1a3d8f;
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 90vw;
+    }
+
+    .timeline {
+        padding: 110px 12px 40px;
+    }
+
+    .yearPill {
+        top: -75px;
+        padding: 4px 16px;
+        font-size: 12px;
+    }
+
+    .yearPill::before {
+        top: -18px;
+        width: 12px;
+        height: 12px;
+    }
+}

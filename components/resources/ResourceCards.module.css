@@ -1,0 +1,132 @@
+.resourcesSection {
+  padding: 70px 20px;
+  background: #f9fafc;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.sectionHeading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0073e6;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resourceCard {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.resourceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.thumbWrapper {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.resourceCard:hover .thumb {
+  transform: scale(1.08);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #0073e6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.resourceContent {
+  padding: 22px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resourceMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.resourceMeta .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.resourceTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.resourceDesc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 18px;
+}
+
+.readMore {
+  align-self: flex-start;
+  background: #0073e6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.readMore:hover {
+  background: #005bb5;
+}
