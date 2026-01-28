@@ -55,6 +55,7 @@ export default function HeroSection() {
                               setIsModalOpen(true);
                             }}
                             className="btn-default btn-highlighted"
+                            style={{ backgroundColor: '#154B9C', borderColor: '#154B9C', color: '#ffffff' }}
                           >
                             Talk to us
                           </a>
