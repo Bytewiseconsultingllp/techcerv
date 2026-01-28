@@ -25,7 +25,7 @@ export async function POST(req: Request) {
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
         <!-- Header -->
         <div style="text-align: center; padding: 20px 0; border-bottom: 3px solid #154B9C;">
-          <img src="https://techcerv.com/images/ih1.png" alt="TechCerv Logo" style="max-height: 60px; height: auto;" />
+          <img src="https://Techcerv.com/images/ih1.png" alt="Techcerv Logo" style="max-height: 60px; height: auto;" />
         </div>
         
         <!-- Content -->
@@ -59,7 +59,7 @@ export async function POST(req: Request) {
         
         <!-- Footer -->
         <div style="text-align: center; padding: 20px; color: #999; font-size: 12px; border-top: 1px solid #eee;">
-          <p>&copy; 2026 TechCerv. All rights reserved.</p>
+          <p>&copy; 2026 Techcerv. All rights reserved.</p>
         </div>
       </div>
     `;
@@ -69,14 +69,14 @@ export async function POST(req: Request) {
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
         <!-- Header -->
         <div style="text-align: center; padding: 20px 0; border-bottom: 3px solid #154B9C;">
-          <img src="https://techcerv.com/images/ih1.png" alt="TechCerv Logo" style="max-height: 60px; height: auto;" />
+          <img src="https://Techcerv.com/images/ih1.png" alt="Techcerv Logo" style="max-height: 60px; height: auto;" />
         </div>
         
         <!-- Content -->
         <div style="padding: 40px 30px;">
           <h2 style="color: #154B9C; margin-top: 0;">Hello ${firstName},</h2>
           <p style="font-size: 16px; line-height: 1.6; color: #555;">
-            Thank you for reaching out to <strong>TechCerv</strong>. We have successfully received your message and appreciate you contacting us.
+            Thank you for reaching out to <strong>Techcerv</strong>. We have successfully received your message and appreciate you contacting us.
           </p>
           <p style="font-size: 16px; line-height: 1.6; color: #555;">
             Our team is reviewing your inquiry and will get back to you shortly, usually within 24 hours.
@@ -88,19 +88,19 @@ export async function POST(req: Request) {
           
           <p style="font-size: 16px; line-height: 1.6; color: #555;">
             Best Regards,<br>
-            <strong>Team TechCerv</strong>
+            <strong>Team Techcerv</strong>
           </p>
         </div>
         
         <!-- Footer -->
         <div style="background-color: #f1f5fb; padding: 30px; text-align: center; color: #666; font-size: 14px; border-radius: 0 0 8px 8px;">
-          <p style="margin: 5px 0;"><strong>TechCerv</strong></p>
+          <p style="margin: 5px 0;"><strong>Techcerv</strong></p>
           <p style="margin: 5px 0;">Cowrks, Rmz galleria offices, yelahanka, Bengaluru 560064</p>
           <p style="margin: 5px 0;">
             <a href="tel:+916364172323" style="color: #154B9C; text-decoration: none;">+91 63641 72323</a> | 
-            <a href="mailto:partner@techcerv.com" style="color: #154B9C; text-decoration: none;">partner@techcerv.com</a>
+            <a href="mailto:partner@Techcerv.com" style="color: #154B9C; text-decoration: none;">partner@Techcerv.com</a>
           </p>
-          <p style="margin-top: 20px; font-size: 12px; color: #999;">&copy; ${new Date().getFullYear()} TechCerv. All rights reserved.</p>
+          <p style="margin-top: 20px; font-size: 12px; color: #999;">&copy; ${new Date().getFullYear()} Techcerv. All rights reserved.</p>
         </div>
       </div>
     `;
@@ -118,7 +118,7 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: process.env.SMTP_FROM,
       to: email,
-      subject: `Thank you for contacting TechCerv`,
+      subject: `Thank you for contacting Techcerv`,
       html: clientHtml
     });
 

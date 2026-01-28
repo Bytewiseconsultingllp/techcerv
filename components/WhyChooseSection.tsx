@@ -1,6 +1,36 @@
 'use client';
 
 import Image from 'next/image';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+
+const CounterItem = ({ end, label, icon, iconAlt }: { end: number, label: string, icon: string, iconAlt: string }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <div className="why-choose-counter-item" ref={ref}>
+      <div className="icon-box">
+        <Image
+          src={icon}
+          alt={iconAlt}
+          width={60}
+          height={60}
+        />
+      </div>
+      <div className="why-choose-counter-content">
+        <h3>
+          <span className="counter">
+            {inView ? <CountUp end={end} duration={2.5} /> : 0}
+          </span>+
+        </h3>
+        <p>{label}</p>
+      </div>
+    </div>
+  );
+};
 
 export default function WhyChooseSection() {
   return (
@@ -75,69 +105,30 @@ export default function WhyChooseSection() {
           {/* COUNTER SECTION */}
           <div className="col-lg-12 order-4">
             <div className="why-choose-counter-list">
-              {/* Counter 1 */}
-              <div className="why-choose-counter-item">
-                <div className="icon-box">
-                  <Image
-                    src="/images/icon-why-choose-counter-1.svg"
-                    alt="Experience"
-                    width={60}
-                    height={60}
-                  />
-                </div>
-                <div className="why-choose-counter-content">
-                  <h3><span className="counter">20</span>+</h3>
-                  <p>Years Experience</p>
-                </div>
-              </div>
-
-              {/* Counter 2 */}
-              <div className="why-choose-counter-item">
-                <div className="icon-box">
-                  <Image
-                    src="/images/icon-why-choose-counter-2.svg"
-                    alt="Projects"
-                    width={60}
-                    height={60}
-                  />
-                </div>
-                <div className="why-choose-counter-content">
-                  <h3><span className="counter">32</span>+</h3>
-                  <p>project complete</p>
-                </div>
-              </div>
-
-              {/* Counter 3 */}
-              <div className="why-choose-counter-item">
-                <div className="icon-box">
-                  <Image
-                    src="/images/icon-why-choose-counter-3.svg"
-                    alt="Customers"
-                    width={60}
-                    height={60}
-                  />
-                </div>
-                <div className="why-choose-counter-content">
-                  <h3><span className="counter">70</span>+</h3>
-                  <p>customer happy</p>
-                </div>
-              </div>
-
-              {/* Counter 4 */}
-              <div className="why-choose-counter-item">
-                <div className="icon-box">
-                  <Image
-                    src="/images/icon-why-choose-counter-4.svg"
-                    alt="Awards"
-                    width={60}
-                    height={60}
-                  />
-                </div>
-                <div className="why-choose-counter-content">
-                  <h3><span className="counter">5</span>+</h3>
-                  <p>winning awards</p>
-                </div>
-              </div>
+              <CounterItem
+                end={20}
+                label="Years Experience"
+                icon="/images/icon-why-choose-counter-1.svg"
+                iconAlt="Experience"
+              />
+              <CounterItem
+                end={32}
+                label="project complete"
+                icon="/images/icon-why-choose-counter-2.svg"
+                iconAlt="Projects"
+              />
+              <CounterItem
+                end={70}
+                label="customer happy"
+                icon="/images/icon-why-choose-counter-3.svg"
+                iconAlt="Customers"
+              />
+              <CounterItem
+                end={5}
+                label="winning awards"
+                icon="/images/icon-why-choose-counter-4.svg"
+                iconAlt="Awards"
+              />
             </div>
           </div>
         </div>
