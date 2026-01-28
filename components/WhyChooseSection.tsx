@@ -3,9 +3,16 @@
 import Image from 'next/image';
 import CountUp from 'react-countup';
 
+import { useInView } from 'react-intersection-observer';
+
 const CounterItem = ({ end, label, icon, iconAlt }: { end: number, label: string, icon: string, iconAlt: string }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2, // Trigger when 20% visible
+  });
+
   return (
-    <div className="why-choose-counter-item">
+    <div className="why-choose-counter-item" ref={ref}>
       <div className="icon-box">
         <Image
           src={icon}
@@ -16,8 +23,8 @@ const CounterItem = ({ end, label, icon, iconAlt }: { end: number, label: string
       </div>
       <div className="why-choose-counter-content">
         <h3>
-          <span className="counter">
-            <CountUp end={end} duration={2.5} enableScrollSpy scrollSpyOnce />
+          <span className="tech-counter">
+            {inView ? <CountUp end={end} duration={2.5} /> : 0}
           </span>+
         </h3>
         <p>{label}</p>
