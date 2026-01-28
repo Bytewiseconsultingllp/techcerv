@@ -33,11 +33,11 @@ export default function HeroSection() {
                       {/* Hero Content Start */}
                       <div className="hero-content">
                         {/* Section Title Start */}
-                        <div className="section-title dark-section">
+                        <div className="section-title dark-section text-center">
                           <h2 className="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
                             Empowering Your Business with AI, Cloud & Digital Transformation
                           </h2>
-                          <p className="wow fadeInUp" data-wow-delay="0.4s" style={{ textAlign: 'center' }}>
+                          <p className="wow fadeInUp" data-wow-delay="0.4s">
                             Maximize the value of your cloud investment by driving digital engagement and
                             delivering exceptional experiences that set your business apart. Foster innovation,
                             enhance customer interactions, and accelerate growth with cutting-edge cloud solutions.
@@ -46,20 +46,18 @@ export default function HeroSection() {
                         {/* Section Title End */}
 
                         {/* Hero Content Body Start */}
-                        <div className="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+                        <div className="hero-content-body d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
                           {/* Hero Button Start */}
-                          <div className="hero-btn">
-                            <a
-                              href="#!"
-                              onClick={(e) => {
-                                e.preventDefault();
-                                setIsModalOpen(true);
-                              }}
-                              className="btn-default btn-highlighted"
-                            >
-                              Talk to us
-                            </a>
-                          </div>
+                          <a
+                            href="#!"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsModalOpen(true);
+                            }}
+                            className="btn-default btn-highlighted"
+                          >
+                            Talk to us
+                          </a>
                           {/* Hero Button End */}
                         </div>
                         {/* Hero Content Body End */}

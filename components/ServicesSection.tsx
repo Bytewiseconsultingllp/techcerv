@@ -56,7 +56,7 @@ export default function ServicesSection() {
         <div className="row section-row">
           <div className="col-lg-12">
             {/* Section Title Start */}
-            <div className="section-title">
+            <div className="section-title text-center">
               <h3 className="wow fadeInUp">our services</h3>
               <h2 className="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
                 AI,Cloud & Digital Transformation Services
@@ -70,8 +70,8 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div key={index} className="col-lg-4 col-md-6">
               {/* Service Item Start */}
-              <div 
-                className={`service-item ${service.active ? 'active' : ''} wow fadeInUp`} 
+              <div
+                className={`service-item ${service.active ? 'active' : ''} wow fadeInUp`}
                 data-wow-delay={service.delay}
               >
                 <div className="service-title-box">

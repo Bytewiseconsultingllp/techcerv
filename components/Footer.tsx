@@ -69,12 +69,12 @@ export default function Footer() {
           </div> */}
 
           <div className="col-lg-4 col-md-12 ms-auto text-lg-end text-start">
-            <div className="footer-links">
+            <div className="footer-links" style={{ textTransform: 'none' }}>
               <h3 style={{ fontSize: '18px', marginBottom: '15px' }}>Contact</h3>
-              <ul style={{ fontSize: '14px' }}>
+              <ul style={{ fontSize: '14px', listStyleType: 'none' }}>
                 <li><a href="tel:++916364172323">+91 63641 72323</a></li>
-                <li><a href="mailto:partner@Techcerv.com">partner@Techcerv.com</a></li>
-                <li>Cowrks, Rmz galleria offices, yelahanka, Bengaluru 560064</li>
+                <li><a href="mailto:partner@techcerv.com" style={{ textTransform: 'lowercase' }}>partner@techcerv.com</a></li>
+                <li style={{ textTransform: 'none' }}>Cowrks, Rmz galleria offices, yelahanka, Bengaluru 560064</li>
               </ul>
             </div>
           </div>

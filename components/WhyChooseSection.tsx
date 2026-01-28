@@ -120,7 +120,7 @@ export default function WhyChooseSection() {
               />
               <CounterItem
                 end={70}
-                label="customer happy"
+                label="happy customer"
                 icon="/images/icon-why-choose-counter-3.svg"
                 iconAlt="Customers"
               />
