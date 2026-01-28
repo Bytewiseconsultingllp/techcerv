@@ -21,8 +21,8 @@ export default function AICloudSection() {
           {/* Service Why Choose List Start */}
           <div className="our-benefit-body service-why-choose-list">
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">AI Readiness Assessment</h3>
                 <p className="anatic">
                   Prepare your business for the AI revolution. Our AI Readiness Assessment helps
@@ -37,8 +37,8 @@ export default function AICloudSection() {
             {/* Service Why Choose Item End */}
 
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">Agentic AI Automation</h3>
                 <p className="anatic">
                   Move from automation to autonomy. We design and deploy Agentic AI systems that act as
@@ -54,8 +54,8 @@ export default function AICloudSection() {
             {/* Service Why Choose Item End */}
 
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">Cloud Analytics Counsultancy</h3>
                 <p className="anatic">
                   Unlock the power of data with expert cloud analytics consultancy. We help businesses
@@ -67,8 +67,8 @@ export default function AICloudSection() {
             {/* Service Why Choose Item End */}
 
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.2s" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.2s">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">Cloud Data Science Services</h3>
                 <p className="anatic">
                   Harness the potential of cloud-powered data science to extract valuable insights.
@@ -81,8 +81,8 @@ export default function AICloudSection() {
             {/* Service Why Choose Item End */}
 
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.4s" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.4s">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">Cloud Application Development</h3>
                 <p className="anatic">
                   Build scalable and high-performance applications with cloud-native technologies.
@@ -94,8 +94,8 @@ export default function AICloudSection() {
             {/* Service Why Choose Item End */}
 
             {/* Service Why Choose Item Start */}
-            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s" style={{ width: '100%' }}>
-              <div className="benefit-body-item-content text-center text-lg-start">
+            <div className="benefit-body-item wow fadeInUp" data-wow-delay="0.6s">
+              <div className="benefit-body-item-content">
                 <h3 className="mb-2">Cloud Customer Experience Solutions</h3>
                 <p className="anatic">
                   Enhance customer interactions with cloud-driven experience solutions. Leverage AI,
