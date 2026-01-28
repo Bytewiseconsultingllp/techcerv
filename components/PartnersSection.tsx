@@ -36,9 +36,9 @@ export default function PartnersSection() {
                       key={`partner-${index}`}
                       src={partner.src}
                       alt={partner.alt}
-                      width={150}
-                      height={50}
-                      style={{ height: '50px', width: 'auto', margin: '0 40px' }}
+                      width={200}
+                      height={80}
+                      style={{ height: '80px', width: 'auto', margin: '0 40px' }}
                     />
                   ))}
                   {/* Duplicate for seamless loop */}
@@ -47,9 +47,9 @@ export default function PartnersSection() {
                       key={`partner-dup-${index}`}
                       src={partner.src}
                       alt={partner.alt}
-                      width={150}
-                      height={50}
-                      style={{ height: '50px', width: 'auto', margin: '0 40px' }}
+                      width={200}
+                      height={80}
+                      style={{ height: '80px', width: 'auto', margin: '0 40px' }}
                     />
                   ))}
                 </div>
