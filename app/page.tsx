@@ -21,7 +21,7 @@ export default function Home() {
       <hr />
       <FAQSection />
       <hr />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Footer />
       <ScriptInitializer />
     </>

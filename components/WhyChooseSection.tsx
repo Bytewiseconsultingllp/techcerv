@@ -22,8 +22,8 @@ export default function WhyChooseSection() {
             {/* Image */}
             <div className="why-choose-image">
               <figure className="image-anime reveal">
-                <Image 
-                  src="/images/our-security-image.png" 
+                <Image
+                  src="/images/our-security-image.png"
                   alt="Security"
                   width={600}
                   height={600}
@@ -78,15 +78,15 @@ export default function WhyChooseSection() {
               {/* Counter 1 */}
               <div className="why-choose-counter-item">
                 <div className="icon-box">
-                  <Image 
-                    src="/images/icon-why-choose-counter-1.svg" 
+                  <Image
+                    src="/images/icon-why-choose-counter-1.svg"
                     alt="Experience"
                     width={60}
                     height={60}
                   />
                 </div>
                 <div className="why-choose-counter-content">
-                  <h3><span className="counter">25</span>+</h3>
+                  <h3><span className="counter">20</span>+</h3>
                   <p>Years Experience</p>
                 </div>
               </div>
@@ -94,15 +94,15 @@ export default function WhyChooseSection() {
               {/* Counter 2 */}
               <div className="why-choose-counter-item">
                 <div className="icon-box">
-                  <Image 
-                    src="/images/icon-why-choose-counter-2.svg" 
+                  <Image
+                    src="/images/icon-why-choose-counter-2.svg"
                     alt="Projects"
                     width={60}
                     height={60}
                   />
                 </div>
                 <div className="why-choose-counter-content">
-                  <h3><span className="counter">480</span>+</h3>
+                  <h3><span className="counter">32</span>+</h3>
                   <p>project complete</p>
                 </div>
               </div>
@@ -110,15 +110,15 @@ export default function WhyChooseSection() {
               {/* Counter 3 */}
               <div className="why-choose-counter-item">
                 <div className="icon-box">
-                  <Image 
-                    src="/images/icon-why-choose-counter-3.svg" 
+                  <Image
+                    src="/images/icon-why-choose-counter-3.svg"
                     alt="Customers"
                     width={60}
                     height={60}
                   />
                 </div>
                 <div className="why-choose-counter-content">
-                  <h3><span className="counter">1000</span>+</h3>
+                  <h3><span className="counter">70</span>+</h3>
                   <p>customer happy</p>
                 </div>
               </div>
@@ -126,15 +126,15 @@ export default function WhyChooseSection() {
               {/* Counter 4 */}
               <div className="why-choose-counter-item">
                 <div className="icon-box">
-                  <Image 
-                    src="/images/icon-why-choose-counter-4.svg" 
+                  <Image
+                    src="/images/icon-why-choose-counter-4.svg"
                     alt="Awards"
                     width={60}
                     height={60}
                   />
                 </div>
                 <div className="why-choose-counter-content">
-                  <h3><span className="counter">25</span>+</h3>
+                  <h3><span className="counter">5</span>+</h3>
                   <p>winning awards</p>
                 </div>
               </div>

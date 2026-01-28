@@ -9,41 +9,34 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            {/* Footer Header Start */}
             <div className="footer-header">
-              {/* Footer Logo Start */}
               <div className="footer-logo">
                 <Image src="/images/iwhite.png" alt="Logo" width={180} height={60} />
               </div>
-              {/* Footer Logo End */}
-              
-              {/* Footer Social Links Start */}
+
               <div className="footer-social-links">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://x.com/techcerv">
                       <i className="fa-brands fa-x-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/techcerv/">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fa-brands fa-instagram"></i>
+                    <a href="https://in.linkedin.com/company/techcerv">
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                   </li>
                 </ul>
               </div>
-              {/* Footer Social Links End */}
             </div>
-            {/* Footer Header End */}
           </div>
 
-          <div className="col-lg-3 col-md-3 col-6">
-            {/* Footer Links Start */}
+          {/* <div className="col-lg-3 col-md-3 col-6">
             <div className="footer-links footer-quick-links">
               <h3>Quick link</h3>
               <ul>
@@ -53,11 +46,9 @@ export default function Footer() {
                 <li><Link href="/resources">Resources</Link></li>
               </ul>
             </div>
-            {/* Footer Links End */}
           </div>
-          
+
           <div className="col-lg-3 col-md-3 col-6">
-            {/* Footer Links Start */}
             <div className="footer-links">
               <h3>Services</h3>
               <ul>
@@ -67,11 +58,9 @@ export default function Footer() {
                 <li><a href="#!">Zoho Workplace</a></li>
               </ul>
             </div>
-            {/* Footer Links End */}
           </div>
-          
+
           <div className="col-lg-3 col-md-3 col-6">
-            {/* Footer Links Start */}
             <div className="footer-links">
               <ul>
                 <li><a href="#">Managed Services</a></li>
@@ -79,39 +68,32 @@ export default function Footer() {
                 <li><a href="#!">Contact us</a></li>
               </ul>
             </div>
-            {/* Footer Links End */}
-          </div>
-          
+          </div> */}
+
           <div className="col-lg-3 col-md-3 col-6">
-            {/* Footer Links Start */}
             <div className="footer-links">
               <h3>Contact</h3>
               <ul>
-                <li><a href="tel:+123456789">+123 456 789</a></li>
-                <li><a href="mailto:info@domain.com">info@domain.com</a></li>
-                <li>Bangalore</li>
+                <li><a href="tel:++916364172323">+916364172323</a></li>
+                <li><a href="mailto:partner@techcerv.com">partner@techcerv.com</a></li>
+                <li>Cowrks, Rmz galleria offices, yelahanka, Bengaluru 560064</li>
               </ul>
             </div>
-            {/* Footer Links End */}
           </div>
         </div>
       </div>
 
-      {/* Footer Copyright Start */}
       <div className="footer-copyright">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              {/* Footer Copyright Text Start */}
               <div className="footer-copyright-text">
                 <p>Copyright © 2025 All Rights Reserved.</p>
               </div>
-              {/* Footer Copyright Text End */}
             </div>
           </div>
         </div>
       </div>
-      {/* Footer Copyright End */}
     </footer>
   );
 }

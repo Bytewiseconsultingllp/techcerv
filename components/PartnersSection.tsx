@@ -32,9 +32,9 @@ export default function PartnersSection() {
                 <div className="logos-slide">
                   {/* First set of logos */}
                   {partners.map((partner, index) => (
-                    <Image 
+                    <Image
                       key={`partner-${index}`}
-                      src={partner.src} 
+                      src={partner.src}
                       alt={partner.alt}
                       width={150}
                       height={50}
@@ -43,9 +43,9 @@ export default function PartnersSection() {
                   ))}
                   {/* Duplicate for seamless loop */}
                   {partners.map((partner, index) => (
-                    <Image 
+                    <Image
                       key={`partner-dup-${index}`}
-                      src={partner.src} 
+                      src={partner.src}
                       alt={partner.alt}
                       width={150}
                       height={50}

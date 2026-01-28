@@ -16,15 +16,13 @@ export default function Header() {
               </Link>
               {/* Logo End */}
 
-              {/* Main Menu Start */}
-              <div className="collapse navbar-collapse main-menu">
+              {/* <div className="collapse navbar-collapse main-menu">
                 <div className="nav-menu-wrapper">
                   <ul className="navbar-nav mr-auto" id="menu">
                     <li className="nav-item">
                       <Link className="nav-link" href="/vision">Vision</Link>
                     </li>
-                    
-                    {/* Mobile Response Start */}
+
                     <li className="nav-item submenu matin">
                       <a className="nav-link" href="#">Services</a>
                       <ul>
@@ -109,14 +107,12 @@ export default function Header() {
                         </li>
                       </ul>
                     </li>
-                    {/* Mobile Response End */}
-                    
-                    {/* Desktop Menu Start */}
+
                     <li className="nav-item submenu mex">
                       <a className="nav-link" href="#">Services</a>
                       <ul className="d-flex justify-content-evenly">
-                        <div className="sub" style={{color: '#fff'}}>
-                          <h5 className="pl" style={{padding: '30px 0 20px 20px'}}>Public Cloud</h5>
+                        <div className="sub" style={{ color: '#fff' }}>
+                          <h5 className="pl" style={{ padding: '30px 0 20px 20px' }}>Public Cloud</h5>
                           <li className="nav-item">
                             <a className="nav-link" href="#!">Licensing & Cloud Consultation</a>
                           </li>
@@ -138,9 +134,9 @@ export default function Header() {
                         </div>
 
                         <div className="subd"></div>
-                        
+
                         <div className="sub">
-                          <h5 className="pl" style={{padding: '30px 0 20px 20px'}}>Digital Workspace</h5>
+                          <h5 className="pl" style={{ padding: '30px 0 20px 20px' }}>Digital Workspace</h5>
                           <li className="nav-item">
                             <a className="nav-link" href="#!">Microsoft 365</a>
                           </li>
@@ -160,11 +156,11 @@ export default function Header() {
                             <a className="nav-link" href="#!">Zoho Workplace</a>
                           </li>
                         </div>
-                        
+
                         <div className="subd"></div>
-                        
+
                         <div className="sub">
-                          <h5 className="pl" style={{padding: '30px 0 20px 20px'}}>AI</h5>
+                          <h5 className="pl" style={{ padding: '30px 0 20px 20px' }}>AI</h5>
                           <li className="nav-item">
                             <a className="nav-link" href="#!">AI Readiness Assessment</a>
                           </li>
@@ -175,11 +171,11 @@ export default function Header() {
                             <a className="nav-link" href="#!">Agentic AI</a>
                           </li>
                         </div>
-                        
+
                         <div className="subd"></div>
-                        
+
                         <div className="sub">
-                          <h5 className="pl" style={{padding: '30px 0 20px 20px'}}>Managed Services</h5>
+                          <h5 className="pl" style={{ padding: '30px 0 20px 20px' }}>Managed Services</h5>
                           <li className="nav-item">
                             <a className="nav-link" href="#!">Resource Augmentation</a>
                           </li>
@@ -190,11 +186,11 @@ export default function Header() {
                             <a className="nav-link" href="#!">Workplace Collab</a>
                           </li>
                         </div>
-                        
+
                         <div className="subd"></div>
-                        
+
                         <div className="sub">
-                          <h5 className="pl" style={{padding: '30px 0 20px 20px'}}>App Development</h5>
+                          <h5 className="pl" style={{ padding: '30px 0 20px 20px' }}>App Development</h5>
                           <li className="nav-item">
                             <a className="nav-link" href="#!">WebApp Design & Development</a>
                           </li>
@@ -204,9 +200,7 @@ export default function Header() {
                         </div>
                       </ul>
                     </li>
-                    {/* Desktop Menu End */}
 
-                    {/* Mobile Response Start */}
                     <li className="nav-item submenu matin">
                       <a className="nav-link" href="#!">Resources</a>
                       <ul>
@@ -218,12 +212,11 @@ export default function Header() {
                         </li>
                       </ul>
                     </li>
-                    {/* Mobile Response End */}
-                    
+
                     <li className="nav-item mex">
                       <Link className="nav-link" href="/resources">Resources</Link>
                     </li>
-                    
+
                     <li className="nav-item">
                       <Link className="nav-link" href="/training">Training</Link>
                     </li>
@@ -234,13 +227,10 @@ export default function Header() {
                   </ul>
                 </div>
 
-                {/* Header Btn Start */}
                 <div className="header-btn">
                   <a href="#!" className="btn-default">get started</a>
                 </div>
-                {/* Header Btn End */}
-              </div>
-              {/* Main Menu End */}
+              </div> */}
 
               <div className="navbar-toggle"></div>
             </div>
@@ -248,7 +238,7 @@ export default function Header() {
           <div className="responsive-menu"></div>
         </div>
       </header>
-      
+
       <style jsx>{`
         @media (max-width: 768px) {
           .matin {
